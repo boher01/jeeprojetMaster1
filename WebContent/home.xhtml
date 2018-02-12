@@ -63,36 +63,31 @@
 
 			</p:dataTable>
 
-			<p:panel id="userDetailsPanelId" header="Users Details"
+			<p:panel id="userDetailsPanelId" header="profil du client"
 				style="width: 700;" widgetVar="oneUser">
-				<h:panelGrid columns="2" cellpadding="2" id="userUpdateForm"
+				<h:panelGrid columns="4" cellpadding="6" id="userUpdateForm"
 					border="0">
-					<h:outputLabel for="#{userManagedBean.selectedUser.userId}"
-						value="UserId" />
-					<h:inputText value="#{userManagedBean.selectedUser.userId}"
-						style="width: 100;" readonly="true" ></h:inputText>
+					<h:outputLabel for="#{userManagedBean.username}" value="code" />
+					<h:inputText value="#{userManagedBean.username}" label="tel.fix"></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="date de creation" />
+					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
+					
 
-					<h:outputLabel for="#{userManagedBean.selectedUser.username}"
-						value="Username" />
-					<h:inputText value="#{userManagedBean.selectedUser.username}"
-						readonly="true"></h:inputText>
 
-					<h:outputLabel for="#{userManagedBean.selectedUser.emailId}"
-						value="EmailId" />
-					<h:inputText value="#{userManagedBean.selectedUser.emailId}"
-						readonly="true"></h:inputText>
+                    <h:outputLabel for="#{userManagedBean.username}" value="nom" />
+					<h:inputText value="#{userManagedBean.username}" label="code postal"></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="prenom" />
+					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
+					
 
-					<h:outputLabel for="#{userManagedBean.selectedUser.gender}"
-						value="Gender" />
-					<h:inputText value="#{userManagedBean.selectedUser.gender}"
-						readonly="true"></h:inputText>
+                  <h:outputLabel for="#{userManagedBean.username}" value="adresse" />
+					<h:inputText value="#{userManagedBean.username}" label="h"></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="code postal" />
+					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
+					
 
-					<h:outputLabel for="#{userManagedBean.selectedUser.dob}"
-						value="DOB" />
-					<h:inputText value="#{userManagedBean.selectedUser.dob}"
-						readonly="true">
-						<f:convertDateTime pattern="MM/dd/yyyy" />
-					</h:inputText>
+
+
 
 				</h:panelGrid>
 			</p:panel>

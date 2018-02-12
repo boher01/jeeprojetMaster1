@@ -15,13 +15,17 @@
 		<p:panel header="SARLINDIGO" style="width: 350;" >
 			<h:form>
          
-			 <h:panelGrid columns="2" cellpadding="2">
-					<h:outputLabel for="#{userManagedBean.username}" value="UserName" />
-					<h:inputText value="#{userManagedBean.username}" label="UserName"></h:inputText>
-					<h:outputLabel for="#{userManagedBean.password}" value="Password" />
+			 <h:panelGrid columns="2" cellpadding="4" border="2">
+					<h:outputLabel for="#{userManagedBean.username}" value="utilisateur" />
+					<h:inputText value="#{userManagedBean.username}" label="utilisateur"></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="mot de pass" />
 					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
 					
-					<h:commandButton type="submit" value="Login"
+					<h:commandButton type="submit" value="valider"
+						action="#{userManagedBean.login}"></h:commandButton>
+						
+						
+							<h:commandButton type="submit" value="quitter"
 						action="#{userManagedBean.login}"></h:commandButton>
 				</h:panelGrid>
 			</h:form>
