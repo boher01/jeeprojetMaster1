@@ -81,12 +81,25 @@
 					
 
                   <h:outputLabel for="#{userManagedBean.username}" value="adresse" />
-					<h:inputText value="#{userManagedBean.username}" label="h"></h:inputText>
+					<h:inputText value="#{userManagedBean.username}" label=""></h:inputText>
 					<h:outputLabel for="#{userManagedBean.password}" value="code postal" />
 					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
 					
+					
+					
+                  <h:outputLabel for="#{userManagedBean.username}" value="tel.fix" />
+					<h:inputText value="#{userManagedBean.username}" label=""></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="email" />
+					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
+					
 
-
+	
+                  <h:outputLabel for="#{userManagedBean.username}" value="ville" />
+					<h:inputText value="#{userManagedBean.username}" label=""></h:inputText>
+					<h:outputLabel for="#{userManagedBean.password}" value="mobilis" />
+					<h:inputSecret value="#{userManagedBean.password}"></h:inputSecret>
+					<h:outputLabel for="#{userManagedBean.password}" value="REMARQUE" />
+					<p:inputTextarea id="inputTextarea" label="Textarea:"/>
 
 
 				</h:panelGrid>
